@@ -1,0 +1,100 @@
+.a {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.a-left {
+    flex: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+}
+
+
+.a-card.bg {
+
+    top: 50px;
+    left: 80px;
+    background-color: #f1acc6;
+    border-radius: 30px;
+}
+
+.a-card {
+    width: 70%;
+    height: 80vh;
+    overflow: hidden;
+    border: 3px solid pink;
+    /* Add border style */
+    border-radius: 30px;
+    margin-right: 20px;
+    /* Add margin to create space between border and right content */
+}
+
+.a-img {
+    width: calc(100% - 20px);
+    /* Adjust width to consider border width */
+    height: calc(100% - 20px);
+    /* Adjust height to consider border width */
+    object-fit: cover;
+    border-radius: 27px;
+    /* Adjust border-radius to accommodate the border width */
+    padding: 10px;
+}
+
+.a-right {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 30px;
+    height: 100%;
+}
+
+.a-title {
+    font-weight: 400px;
+}
+
+.a-sub {
+    margin: 5px 0px;
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.a-desc {
+    margin: 5px 0px;
+}
+
+.a-btn {
+    border: 1px solid black;
+    width: max-content;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0px;
+
+}
+
+
+@keyframes fadeInAndSlide {
+    0% {
+        opacity: 0.2;
+        transform: translateY(100%);
+    }
+
+    50% {
+        opacity: 0.85;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
