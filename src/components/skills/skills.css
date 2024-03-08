@@ -11,14 +11,17 @@
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
 .s-title {
+    display: flex;
     text-align: center;
     margin: 30px;
     font-weight: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -53,4 +56,20 @@
 .s-two,
 .s-three {
     flex-direction: column;
+}
+
+.desc {
+    width: 200px;
+    height: max-content;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: center;
+
+}
+
+small {
+    text-align: center;
 }
