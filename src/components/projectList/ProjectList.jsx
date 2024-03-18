@@ -1,5 +1,6 @@
 import Projects from '../projects/Projects'
 import './projectlist.css'
+import { projects } from '../../data.js'
 
 function ProjectList() {
     return (
@@ -11,12 +12,9 @@ function ProjectList() {
                 </p>
             </div>
             <div className="pl-list">
-                <Projects />
-                <Projects />
-                <Projects />
-                <Projects />
-                <Projects />
-                <Projects />
+                {projects.map(item => (
+                    <Projects key={item.id} img={item.img} link={item.link} />
+                ))}
             </div>
         </div>
     )
