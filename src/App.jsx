@@ -19,6 +19,7 @@ function App() {
       <Skills />
       <ProjectList />
       <Contact />
+
     </div>
   )
 }

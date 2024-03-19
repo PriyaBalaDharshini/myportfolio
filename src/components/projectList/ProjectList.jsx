@@ -13,7 +13,7 @@ function ProjectList() {
             </div>
             <div className="pl-list">
                 {projects.map(item => (
-                    <Projects key={item.id} img={item.img} link={item.link} />
+                    <Projects key={item.id} name={item.name} img={item.img} link={item.link} />
                 ))}
             </div>
         </div>

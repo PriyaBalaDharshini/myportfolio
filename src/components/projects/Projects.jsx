@@ -1,6 +1,6 @@
 import './project.css'
 
-function Projects({ img, link }) {
+function Projects({ img, link, name }) {
     return (
         <div className='p'>
             <div className="p-browser">
@@ -11,6 +11,7 @@ function Projects({ img, link }) {
             <a href={link} target="_blank" rel="noreferrer">
                 <img src={img} alt="" className="p-img" />
             </a>
+            <p className="p-name">{name}</p>
         </div>
     )
 }
